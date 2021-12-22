@@ -137,7 +137,7 @@ footer div {
     margin: 50px 0 0 0;
     padding: 100px 150px;
     height: 43rem;
-    background: url(/imagenes/portada.png) #e0dbdb;
+    background: url('/imagenes/portada.png') center no-repeat #e0dbdb;
     align-items: center;
 }
 
@@ -244,7 +244,7 @@ footer div {
     }
     
 .portfolio-item1 {
-    background-image: url(/imagenes/brainials-coder.jpg);
+    background-image: url('/imagenes/brainials-coder.jpg');
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -256,7 +256,7 @@ footer div {
     height: 15rem;
 }
 .portfolio-item2 {
-    background-image: url(/imagenes/brainials.jpg);
+    background-image: url('/imagenes/brainials.jpg');
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -268,7 +268,7 @@ footer div {
     height: 15rem;
 }
 .portfolio-item3 {
-    background-image: url(/imagenes/brainials-youtube.jpg);
+    background-image: url('/imagenes/brainials-youtube.jpg');
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -280,7 +280,7 @@ footer div {
     height: 15rem;
 }
 .portfolio-item4 {
-    background-image: url(/imagenes/synagro.jpg);
+    background-image: url('/imagenes/synagro.jpg');
     display: flex;
     justify-content: left;
     align-items: flex-end;
