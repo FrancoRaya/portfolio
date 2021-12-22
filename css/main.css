@@ -137,6 +137,7 @@ footer div {
     margin: 50px 0 0 0;
     padding: 100px 150px;
     height: 43rem;
+    background-image: url(/imagenes/portada.png) center no-repeat;
     background: url(/imagenes/portada.png) no-repeat center #e0dbdb;
     align-items: center;
 }
