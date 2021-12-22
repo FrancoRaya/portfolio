@@ -1,0 +1,414 @@
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    color: #332f2e;
+/*     border: 1px solid red; */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Serif', serif;
+    background: none;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+/* h2 {
+    margin: 0 0 50px 0;
+} */
+
+h3 {
+    margin: 0 0 25px 0;
+}
+
+p, b, i, li, button, a, span, a {
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: #c33a37;
+}
+
+a:hover {
+    color: #332f2e;
+}
+
+.boton1 {
+    color: #fff;
+    padding: 10px 15px;
+    margin: 50px 15px 50px 0;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px solid #c33a37;
+    background-color: #c33a37;
+}
+
+.boton1:hover {
+    transition-duration: 0.6s;
+    box-shadow: 10px 10px 0 #c33a37;
+    top: -5px;
+    left: -5px;
+}
+
+.boton1 a {
+    color: #fff;
+}
+
+.boton2 {
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 15px 50px 0;
+    padding: 10px 15px;
+    color: #c33a37;
+}
+
+.boton2 a:hover {
+    color: #c33a37;
+}
+
+.boton3 {
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    color: #c33a37;
+}
+
+.divisor {
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    margin: 20px 0;
+    background-color: #c33a37;
+}
+
+/* Footer */
+footer {
+    background-color: #e0dbdb;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-content: center;
+    padding: 50px 150px;
+}
+
+footer div {
+    padding: 15px;
+}
+/* Fin footer */
+/* Fin ajustes generales */
+
+
+/* Barra de navegación */
+.navbar {
+    background-color: #e0dbdb;
+    padding: 20px 120px;
+}
+
+.navbar-menu {
+    border: none;
+}
+
+.navbar-menu__links {
+    padding: 0 50px;
+}
+
+.menu-link {
+    color: #332f2e;
+    padding: 10px 0;
+}
+
+.menu-link:hover {
+    color: #c33a37;
+}
+/* Fin barra de navegación */
+
+/* Header */
+.header {
+    display: flex;
+    margin: 50px 0 0 0;
+    padding: 100px 150px;
+    height: 43rem;
+    background: url(/imagenes/portada.png) no-repeat center #e0dbdb;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 3em;
+
+}
+
+.bajada {
+    font-size: 1.5em;
+}
+
+/* .wave {
+    display: flex;
+    position: relative;
+    transform: translate(0, -90%);
+} */
+/* Header */
+
+
+/* Quien soy */
+.quiensoy {
+    padding: 100px 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+.quiensoy p {
+    padding: 0 100px;
+}
+
+.quiensoy-redes {
+    padding: 10px;
+}
+/* Fin quien soy */
+
+
+/* Experiencia */
+.experiencia {
+    padding: 100px 150px;
+    background-color: #e0dbdb;
+    text-align: center;
+}
+
+.experiencia-caja {
+    justify-content: center;
+    text-align: left;
+}
+
+.experiencia-puesto {
+    width: 25rem;
+    height: 10rem;
+    padding: 0 30px 20px 0;
+}
+
+.experiencia-puesto p {
+    margin: 15px 0;
+}
+
+.experiencia-descripcion {
+    width: 28rem;
+    height: 15rem;
+    justify-content: center;
+    padding: 0 0 20px 30px;
+    margin-top: -2px;
+    border-left: 2px solid #c33a37;
+    position: relative;
+}
+
+.experiencia-descripcion::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #e0dbdb;
+    border: 2px solid #c33a37;
+}
+
+.experiencia-descripcion ul {
+    list-style-type: none;
+    margin: 15px 0;
+    padding: 0;
+}
+/* Fin experiencia */
+
+
+/* Porfolio */
+.portfolio {
+    padding: 100px 150px;
+    text-align: center;
+    background-color: #e0dbdb;
+}
+
+.portfolio-caja {
+    display: grid;
+    flex-flow: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.portfolio-item1 {
+    background-image: url(/imagenes/brainials-coder.jpg);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    justify-self: center;
+    grid-area: 1 / 1 / 3 / 2; 
+    border: 1px solid #c33a37;
+    margin: 10px;
+    width: 25rem;
+    height: 15rem;
+}
+.portfolio-item2 {
+    background-image: url(/imagenes/brainials.jpg);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    justify-self: center;
+    grid-area: 2 / 2 / 4 / 3;
+    border: 1px solid #c33a37; 
+    margin: 10px;
+    width: 25rem;
+    height: 15rem;
+}
+.portfolio-item3 {
+    background-image: url(/imagenes/brainials-youtube.jpg);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    justify-self: center; 
+    grid-area: 4 / 1 / 6 / 2;
+    border: 1px solid #c33a37;
+    margin: 10px;
+    width: 25rem;
+    height: 15rem;
+}
+.portfolio-item4 {
+    background-image: url(/imagenes/synagro.jpg);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    justify-self: center; 
+    grid-area: 5 / 2 / 7 / 3;
+    border: 1px solid #c33a37;
+    margin: 10px;
+    width: 25rem;
+    height: 15rem;
+}
+/* Fin porftolio */
+
+
+/* Habilidades */
+.habilidades {
+    padding: 100px 150px;
+    text-align: center;
+}
+
+.habilidades-caja {
+    display: flex;
+}
+
+.habilidades-columna {
+    width: 50%;
+    text-align: left;
+}
+
+.habilidades-item {
+    margin: 20px;
+}
+
+.habilidades-item p {
+    font-size: 1.1em;
+}
+
+.habilidades-barra {
+    border-radius: 0;
+    background-color: #e0dbdb;
+}
+
+.habilidades-barra__progreso {
+    background-color: #c33a37;
+}
+/* Fin habilidades */
+
+
+/* Idiomas */
+.idiomas {
+    padding: 100px 150px;
+    text-align: center;
+}
+.idiomas-caja {
+    display: flex;
+}
+.idiomas-columna {
+    width: 50%;
+    text-align: left;
+}
+
+.idiomas-item {
+    margin: 20px;
+}
+
+.idiomas-item p {
+    font-size: 1.1em;
+}
+
+.idiomas-barra {
+    border-radius: 0;
+    background-color: #e0dbdb;
+}
+
+.idiomas-barra__progreso {
+    background-color: #c33a37;
+}
+/* Fin idiomas */
+
+
+/* Educación */
+.educacion {
+    padding: 100px 150px;
+    text-align: center;
+}
+
+.educacion-caja {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.educacion-columna {
+    margin: 0 30px;
+}
+
+.educacion-columna h3 {
+    font-weight: 700;
+}
+
+.educacion-item {
+    padding: 0 0 20px 30px;
+    margin-top: -2px;
+    border-left: 2px solid #c33a37;
+    position: relative;
+}
+
+.educacion-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #c33a37;
+}
+/* Fin educación */
+
+
+/* Contacto */
+.contacto {
+    padding: 100px 150px;
+    text-align: center;
+}
+
+.contacto-columna {
+    text-align: left;
+}
+/* Fin contacto */
+
