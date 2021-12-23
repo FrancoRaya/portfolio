@@ -18,7 +18,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!--     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -38,8 +38,10 @@
                     <button class="navbar-toggler navbar-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <img src="./imagenes/Marca.png" alt="franco-raya-logo">
+                    <a href="#inicio">
+                        <img src="./imagenes/Marca.png" alt="franco-raya-logo">
+                    </a>
+                    
 
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header ps-5 pe-5">
@@ -91,15 +93,17 @@
                     <span class="typed-cursor" aria-hidden="true"></span>
                 </p>
 
-                <button class="boton1">
-                    <a href="#contacto">Contactarme</a>
-                </button>
-                <button class="boton2"> 
-                    <a href="#quiensoy"> 
-                        Conoceme
-                        <i class="fas fa-chevron-right" style="color: #c33a37;"></i>
-                    </a>
-                </button>
+                <div>
+                    <button class="boton1">
+                        <a href="#contacto">Contactarme</a>
+                    </button>
+                    <button class="boton2"> 
+                        <a href="#quiensoy"> 
+                            Conoceme
+                            <i class="fas fa-chevron-right" style="color: #ff1d25;"></i>
+                        </a>
+                    </button>
+                </div>
             </div>
         </section>
     <!--     <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -109,12 +113,16 @@
 
 
         <!-- Quien soy -->
-        <section class="quiensoy">
+        <section class="quiensoy patron">
             <h2 id="quiensoy">
                 Quién Soy
             </h2>
 
-            <div class="divisor"></div>
+            <div class="divisor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
             <p>
                 Creo que el <b>conocimiento</b>  es la herramienta más <b>poderosa</b> que tenemos para hacer de este mundo un lugar mejor, y creo aún más en lo que las personas somos capaces de hacer con ese <b>conocimiento</b>, si sabemos usarlo. Es por eso que intentado cultivar mi <b>curiosidad</b> de muchas formas diferentes con el propósito de <b>ayudar a otros con mis aprendizajes</b> , porque el <i>conocimiento no sirve de nada si se puede compartir</i>.
@@ -140,7 +148,11 @@
                 Mi Experiencia Laboral
             </h2>
 
-            <div class="divisor"></div>
+            <div class="divisor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
             <div class="mt-5">
                 <div class="experiencia-caja d-flex">
@@ -282,32 +294,70 @@
                 Mis Últimos Proyectos
             </h2>
 
-            <div class="divisor"></div>
+            <div class="divisor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
             <div class="portfolio-caja mt-5 mb-5">
                 <div class="portfolio-item1">
-                    <a href="https://github.com/FrancoRaya/brainials/tree/master" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
-                    <a href="https://francoraya.github.io/brainials/" target="blank"><i class="fas fa-link" style="font-size: 2.5em;"></i></a>
+                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
+                        <div>
+                            <p>
+                                Proyecto Coder - Brainials
+                            </p>
+                        </div>
+
+                        <div>
+                            <a href="https://github.com/FrancoRaya/brainials/tree/master" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
+                            <a href="https://francoraya.github.io/brainials/" target="blank"><i class="fas fa-link" style="font-size: 2.5em;"></i></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="portfolio-item2">
-                    <a href="https://brainials.info/" target="blank"></a>
-                    <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
+                        <p>
+                            Brianials.info
+                        </p>
+    
+                        <a href="https://brainials.info/" target="blank">
+                            <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="portfolio-item3">
-                    <a href="https://www.youtube.com/c/Brainials/videos" target="blank"></a>
-                    <i class="fab fa-youtube" style="font-size: 2.5em;"></i>
+                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
+                        <p>
+                            Brainials - YouTube
+                        </p>
+
+                        <a href="https://www.youtube.com/c/Brainials/videos" target="blank">
+                            <i class="fab fa-youtube" style="font-size: 2.5em;"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="portfolio-item4">
-                    <a href="https://synagroweb.com/" target="blank"></a>
-                    <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
+                        <p>
+                            Synagroweb.com
+                        </p>
+
+                        <a href="https://synagroweb.com/" target="blank">
+                            <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <button class="boton1">
-                Contactarme
+                <a href="#contact">
+                    Contactarme
+                </a>
+                
             </button>
         </section>
         <!-- Fin portfolio -->
@@ -319,7 +369,11 @@
                 Mis Habilidades
             </h2>
             
-            <div class="divisor"></div>
+            <div class="divisor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             
             <div class="habilidades-caja">
                 <div class="habilidades-columna">
@@ -464,7 +518,11 @@
                 Mi Educación
             </h2>
 
-            <div class="divisor"></div>
+            <div class="divisor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
             <div class="educacion-caja mt-5">
                 <div class="educacion-columna">
@@ -506,7 +564,7 @@
                         <button class="boton3">
                             <a href="https://drive.google.com/file/d/1MFIomO5ZhbRRVz6Ul8j9uBgN6j_TK7_8/view?usp=sharing" target="blank">
                                 Ver certificado
-                                <i class="fas fa-chevron-right" style="color: #c33a37;"></i>
+                                <i class="fas fa-chevron-right" style="color: #ff1d25;"></i>
                             </a>
                         </button>
                     </div>
@@ -536,26 +594,36 @@
         <!-- Contacto -->
         <section id="contact" class="contact contacto">
             <div class="container aos-init aos-animate" data-aos="fade-up">
-                <div class="section-title mb-5">
+                <div class="section-title">
                     <h2 id="contacto">Contacto</h2>
-                    <div class="divisor"></div>
+                    <div class="divisor">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 
-                <div class="row mt-1 contacto-columna">
+                <div class="row mt-1">
                     <div class="col-lg-4">
                         <div class="info">
-                            <div class="d-flex">
-                                <div class="d-flex flex-column text-center">
+                            <div class="contacto-caja">
+                                <div >
                                     <i class="fas fa-map-marker-alt m-3" style="font-size: 2em;"></i>
-                                    <i class="far fa-envelope m-3" style="font-size: 2em;"></i>
-                                    <i class="fas fa-mobile-alt m-3" style="font-size: 2em;"></i>
-                                    <i class="fab fa-linkedin-in m-3" style="font-size: 2em;"></i>
-                                </div>
-    
-                                <div class="d-flex flex-column justify-content-evenly">
                                     <p class="m-3 p-0">Tucumán - Argentina</p>
+                                </div>
+
+                                <div >
+                                    <i class="far fa-envelope m-3" style="font-size: 2em;"></i>
                                     <a class="m-3 p-0" href="mailto:francoraya14@gmail.com" >francoraya14@gmail.com</a>
+                                </div>
+
+                                <div >
+                                    <i class="fas fa-mobile-alt m-3" style="font-size: 2em;"></i>
                                     <p class="m-3 p-0">+54 381 356 2863</p>
+                                </div>
+
+                                <div >
+                                    <i class="fab fa-linkedin-in m-3" style="font-size: 2em;"></i>
                                     <a class="m-3 p-0" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank">/franco-raya</a>
                                 </div>
                             </div>

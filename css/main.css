@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Signika', sans-serif;
     background: none;
 }
 
@@ -23,14 +23,15 @@ h3 {
     margin: 0 0 25px 0;
 }
 
-p, b, i, li, button, a, span, a {
-    font-family: 'Open Sans', sans-serif;
+p, b, i, li, button, a, span {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.1em;
     background: none;
 }
 
 a {
     text-decoration: none;
-    color: #c33a37;
+    color: #ff1d25;
 }
 
 a:hover {
@@ -38,21 +39,23 @@ a:hover {
 }
 
 .boton1 {
+    border-radius: 5px;
+    box-shadow: 0 0 30px #ff1d257e;
     color: #fff;
     padding: 10px 15px;
-    margin: 50px 15px 50px 0;
+    margin: 50px 10px;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 1px;
-    border: 2px solid #c33a37;
-    background-color: #c33a37;
+    border: 2px solid #ff1d25;
+    background-color: #ff1d25;
+    transition-duration: 0.6s;
+    transform: scale(1.1,1.1);
 }
 
 .boton1:hover {
-    transition-duration: 0.6s;
-    box-shadow: 10px 10px 0 #c33a37;
-    top: -5px;
-    left: -5px;
+    box-shadow: none;
+    transform: scale(1,1);
 }
 
 .boton1 a {
@@ -66,11 +69,7 @@ a:hover {
     letter-spacing: 1px;
     margin: 50px 15px 50px 0;
     padding: 10px 15px;
-    color: #c33a37;
-}
-
-.boton2 a:hover {
-    color: #c33a37;
+    color: #ff1d25;
 }
 
 .boton3 {
@@ -78,16 +77,25 @@ a:hover {
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 15px 0;
-    color: #c33a37;
+    margin: 5px 0;
+    color: #ff1d25;
 }
 
 .divisor {
-    display: inline-block;
-    height: 4px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 100%;
     margin: 20px 0;
-    background-color: #c33a37;
+}
+
+.divisor div {
+    background-color: #ff1d25;
+    border-radius: 5px;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 /* Footer */
@@ -97,7 +105,7 @@ footer {
     flex-flow: column;
     text-align: center;
     align-content: center;
-    padding: 50px 150px;
+    padding: 30px 150px;
 }
 
 footer div {
@@ -127,7 +135,7 @@ footer div {
 }
 
 .menu-link:hover {
-    color: #c33a37;
+    color: #ff1d25;
 }
 /* Fin barra de navegación */
 
@@ -160,6 +168,7 @@ footer div {
 
 /* Quien soy */
 .quiensoy {
+    
     padding: 100px 150px;
     justify-content: center;
     text-align: center;
@@ -167,6 +176,7 @@ footer div {
 
 .quiensoy p {
     padding: 0 100px;
+    text-align: justify;
 }
 
 .quiensoy-redes {
@@ -203,7 +213,7 @@ footer div {
     justify-content: center;
     padding: 0 0 20px 30px;
     margin-top: -2px;
-    border-left: 2px solid #c33a37;
+    border-left: 2px solid #ff1d25;
     position: relative;
 }
 
@@ -216,7 +226,7 @@ footer div {
     left: -9px;
     top: 0;
     background: #e0dbdb;
-    border: 2px solid #c33a37;
+    border: 2px solid #ff1d25;
 }
 
 .experiencia-descripcion ul {
@@ -236,57 +246,83 @@ footer div {
 
 .portfolio-caja {
     display: grid;
-    flex-flow: wrap;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-    
+}
+
+.porfolio-links {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 25rem;
+    height: 15rem;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.porfolio-links:hover {
+    opacity: 100%;
+}
+
+.porfolio-links p {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.porfolio-links a {
+    margin: 5px;
+}
+
 .portfolio-item1 {
-    background-image: url('/imagenes/brainials-coder.jpg');
+    background: url('/imagenes/brainials-coder.jpg') center no-repeat;
+    border-radius: 15px;
+    box-shadow: 15px 15px 50px #332f2e5b;
     display: flex;
     justify-content: left;
-    align-items: flex-end;
     justify-self: center;
     grid-area: 1 / 1 / 3 / 2; 
-    border: 1px solid #c33a37;
     margin: 10px;
     width: 25rem;
     height: 15rem;
 }
+
 .portfolio-item2 {
-    background-image: url('/imagenes/brainials.jpg');
+    border-radius: 15px;
+    box-shadow: 15px 15px 50px #332f2e79;
+    background: url('/imagenes/brainials.jpg') center no-repeat;
     display: flex;
     justify-content: left;
     align-items: flex-end;
     justify-self: center;
     grid-area: 2 / 2 / 4 / 3;
-    border: 1px solid #c33a37; 
     margin: 10px;
     width: 25rem;
     height: 15rem;
 }
+
 .portfolio-item3 {
-    background-image: url('/imagenes/brainials-youtube.jpg');
+    border-radius: 15px;
+    box-shadow: 15px 15px 50px #332f2e79;
+    background: url('/imagenes/brainials-youtube.jpg') center no-repeat;
     display: flex;
     justify-content: left;
-    align-items: flex-end;
     justify-self: center; 
     grid-area: 4 / 1 / 6 / 2;
-    border: 1px solid #c33a37;
     margin: 10px;
     width: 25rem;
     height: 15rem;
 }
+
 .portfolio-item4 {
-    background-image: url('/imagenes/synagro.jpg');
+    border-radius: 15px;
+    box-shadow: 15px 15px 50px #332f2e79;
+    background: url('/imagenes/synagro.jpg') center no-repeat;
     display: flex;
     justify-content: left;
     align-items: flex-end;
     justify-self: center; 
     grid-area: 5 / 2 / 7 / 3;
-    border: 1px solid #c33a37;
     margin: 10px;
     width: 25rem;
     height: 15rem;
@@ -318,12 +354,13 @@ footer div {
 }
 
 .habilidades-barra {
-    border-radius: 0;
+    border-radius: 5px;
     background-color: #e0dbdb;
 }
 
 .habilidades-barra__progreso {
-    background-color: #c33a37;
+    border-radius: 5px;
+    background-color: #ff1d25;
 }
 /* Fin habilidades */
 
@@ -350,12 +387,13 @@ footer div {
 }
 
 .idiomas-barra {
-    border-radius: 0;
+    border-radius: 5px;
     background-color: #e0dbdb;
 }
 
 .idiomas-barra__progreso {
-    background-color: #c33a37;
+    border-radius: 5px;
+    background-color: #ff1d25;
 }
 /* Fin idiomas */
 
@@ -383,7 +421,7 @@ footer div {
 .educacion-item {
     padding: 0 0 20px 30px;
     margin-top: -2px;
-    border-left: 2px solid #c33a37;
+    border-left: 2px solid #ff1d25;
     position: relative;
 }
 
@@ -396,7 +434,7 @@ footer div {
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #c33a37;
+    border: 2px solid #ff1d25;
 }
 /* Fin educación */
 
@@ -407,8 +445,303 @@ footer div {
     text-align: center;
 }
 
-.contacto-columna {
+.contacto-caja {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.contacto-caja div {
+    display: flex;
     text-align: left;
 }
 /* Fin contacto */
 
+
+/* Ajustes mobile */
+@media (max-width: 1024px) {
+    .portfolio-caja {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 40px;
+        }
+        
+    .portfolio-item1 { grid-area: 1 / 1 / 3 / 3; }
+    .portfolio-item2 { grid-area: 3 / 1 / 5 / 3; }
+    .portfolio-item3 { grid-area: 5 / 1 / 7 / 3; }
+    .portfolio-item4 { grid-area: 7 / 1 / 9 / 3; }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 80px;
+    }
+
+    .header {
+        height: 35rem;
+        padding: 80px;        
+        background-size: auto 70%;
+        background-position: right bottom;
+    }
+
+    .quiensoy {
+        padding: 80px;
+    }
+
+    .experiencia {
+        padding: 80px;
+    }
+
+    .portfolio {
+        padding: 80px;
+    }
+
+    .habilidades {
+        padding: 80px;
+    }
+
+    .educacion {
+        padding: 80px;
+    }
+
+    .idiomas {
+        padding: 80px;
+    }
+
+    .contacto {
+        padding: 80px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .header {
+        padding: 50px;
+        background-size: auto 50%;
+        background-position: right bottom;
+    }
+
+    .quiensoy {
+        padding: 40px;
+    }
+    
+    .quiensoy p {
+        padding: 0;
+    }
+
+    .experiencia {
+        padding: 50px;
+    }
+
+    .experiencia-caja {
+        flex-flow: column;
+    }
+
+    .experiencia-puesto {
+        width: fit-content;
+        height: auto;
+        justify-content: center;
+        padding: 0 0 20px 30px;
+        margin-top: -2px;
+        border-left: 2px solid #ff1d25;
+        position: relative;
+    }
+
+    .experiencia-puesto::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #e0dbdb;
+        border: 2px solid #ff1d25;
+    }
+
+    .experiencia-descripcion {
+        width: fit-content;
+        height: auto;
+    }
+
+    .experiencia-descripcion::before {
+        content: none;
+    }
+
+    .portfolio {
+        padding: 50px;
+    }
+    
+    .portfolio-item1 {
+        background-size: auto 100%;
+        width: 19rem;
+        height: 12rem;
+    }
+    .portfolio-item2 {
+        background-size: auto 100%;
+        width: 19rem;
+        height: 12rem;
+    }
+    .portfolio-item3 {
+        background-size: auto 100%;
+        width: 19rem;
+        height: 12rem;
+    }
+    .portfolio-item4 {
+        background-size: auto 100%;
+        width: 19rem;
+        height: 12rem;
+    }
+
+    .porfolio-links {
+        width: 19rem;
+        height: 12rem;
+    }
+
+    .habilidades {
+        padding: 50px;
+    }
+
+    .habilidades-caja {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .habilidades-columna {
+        width: 100%;
+    }
+
+    .idiomas {
+        padding: 50px;
+    }
+
+    .idiomas-caja {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .idiomas-columna {
+        width: 100%;
+    }
+
+    .educacion {
+        padding: 50px;
+    }
+
+    .educacion-caja {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .educacion-columna {
+        margin: 0 0 40px 0;
+    }
+
+    .contacto {
+        padding: 50px;
+    }
+
+    .contacto-caja div {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .boton2 {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .header {
+        height: 35rem;
+        padding: 40px;
+        background-size: auto 40%;
+        background-position: center bottom;
+    }
+
+    .header-caja div {
+        display: flex;
+        flex-flow: column;
+        margin: 0 0 100px 0;
+    }
+
+    .experiencia {
+        padding: 40px;
+    }
+
+    .portfolio-caja {
+        grid-row-gap: 20px;
+    }
+
+    .portfolio-item1 {
+        background-size: auto 110%;
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .portfolio-item2 {
+        background-size: auto 110%;
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .portfolio-item3 {
+        background-size: auto 110%;
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .portfolio-item4 {
+        background-size: auto 110%;
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .porfolio-links {
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .porfolio-links p {
+        font-size: 0.9em;
+    }
+
+    .habilidades {
+        padding: 40px;
+    }
+
+    .idiomas {
+        padding: 40px;
+    }
+
+    .educacion {
+        padding: 40px;
+    }
+
+    .contacto {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
+/* Fin ajustes mobile */
