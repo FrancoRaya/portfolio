@@ -3,30 +3,23 @@
     margin: 0;
     padding: 0;
     color: #332f2e;
-/*     border: 1px solid red; */
+}
+
+body {
+    position: relative;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Signika', sans-serif;
-    background: none;
 }
 
 h1, h2 {
     font-weight: 700;
 }
 
-/* h2 {
-    margin: 0 0 50px 0;
-} */
-
-h3 {
-    margin: 0 0 25px 0;
-}
-
 p, b, i, li, button, a, span {
     font-family: 'Signika', sans-serif;
     font-size: 1.1em;
-    background: none;
 }
 
 a {
@@ -63,13 +56,13 @@ a:hover {
 }
 
 .boton2 {
+    background: none;
     border: none;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 15px 50px 0;
     padding: 10px 15px;
-    color: #ff1d25;
 }
 
 .boton3 {
@@ -139,6 +132,7 @@ footer div {
 }
 /* Fin barra de navegación */
 
+
 /* Header */
 .header {
     display: flex;
@@ -147,6 +141,7 @@ footer div {
     height: 43rem;
     background: url("/imagenes/portada.png") center no-repeat #e0dbdb;
     align-items: center;
+    position: relative;
 }
 
 .header h1 {
@@ -157,18 +152,11 @@ footer div {
 .bajada {
     font-size: 1.5em;
 }
-
-/* .wave {
-    display: flex;
-    position: relative;
-    transform: translate(0, -90%);
-} */
 /* Header */
 
 
 /* Quien soy */
 .quiensoy {
-    
     padding: 100px 150px;
     justify-content: center;
     text-align: center;
@@ -209,7 +197,7 @@ footer div {
 
 .experiencia-descripcion {
     width: 28rem;
-    height: 15rem;
+    height: auto;
     justify-content: center;
     padding: 0 0 20px 30px;
     margin-top: -2px;
@@ -448,7 +436,6 @@ footer div {
 .contacto-caja {
     display: flex;
     flex-flow: column;
-
 }
 
 .contacto-caja div {
@@ -458,290 +445,4 @@ footer div {
 /* Fin contacto */
 
 
-/* Ajustes mobile */
-@media (max-width: 1024px) {
-    .portfolio-caja {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 40px;
-        }
-        
-    .portfolio-item1 { grid-area: 1 / 1 / 3 / 3; }
-    .portfolio-item2 { grid-area: 3 / 1 / 5 / 3; }
-    .portfolio-item3 { grid-area: 5 / 1 / 7 / 3; }
-    .portfolio-item4 { grid-area: 7 / 1 / 9 / 3; }
-}
 
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 20px 80px;
-    }
-
-    .header {
-        height: 35rem;
-        padding: 80px;        
-        background-size: auto 70%;
-        background-position: right bottom;
-    }
-
-    .quiensoy {
-        padding: 80px;
-    }
-
-    .experiencia {
-        padding: 80px;
-    }
-
-    .portfolio {
-        padding: 80px;
-    }
-
-    .habilidades {
-        padding: 80px;
-    }
-
-    .educacion {
-        padding: 80px;
-    }
-
-    .idiomas {
-        padding: 80px;
-    }
-
-    .contacto {
-        padding: 80px;
-    }
-}
-
-
-@media (max-width: 575px) {
-    .navbar {
-        padding: 20px 50px;
-    }
-
-    .header {
-        padding: 50px;
-        background-size: auto 50%;
-        background-position: right bottom;
-    }
-
-    .quiensoy {
-        padding: 40px;
-    }
-    
-    .quiensoy p {
-        padding: 0;
-    }
-
-    .experiencia {
-        padding: 50px;
-    }
-
-    .experiencia-caja {
-        flex-flow: column;
-    }
-
-    .experiencia-puesto {
-        width: fit-content;
-        height: auto;
-        justify-content: center;
-        padding: 0 0 20px 30px;
-        margin-top: -2px;
-        border-left: 2px solid #ff1d25;
-        position: relative;
-    }
-
-    .experiencia-puesto::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50px;
-        left: -9px;
-        top: 0;
-        background: #e0dbdb;
-        border: 2px solid #ff1d25;
-    }
-
-    .experiencia-descripcion {
-        width: fit-content;
-        height: auto;
-    }
-
-    .experiencia-descripcion::before {
-        content: none;
-    }
-
-    .portfolio {
-        padding: 50px;
-    }
-    
-    .portfolio-item1 {
-        background-size: auto 100%;
-        width: 19rem;
-        height: 12rem;
-    }
-    .portfolio-item2 {
-        background-size: auto 100%;
-        width: 19rem;
-        height: 12rem;
-    }
-    .portfolio-item3 {
-        background-size: auto 100%;
-        width: 19rem;
-        height: 12rem;
-    }
-    .portfolio-item4 {
-        background-size: auto 100%;
-        width: 19rem;
-        height: 12rem;
-    }
-
-    .porfolio-links {
-        width: 19rem;
-        height: 12rem;
-    }
-
-    .habilidades {
-        padding: 50px;
-    }
-
-    .habilidades-caja {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .habilidades-columna {
-        width: 100%;
-    }
-
-    .idiomas {
-        padding: 50px;
-    }
-
-    .idiomas-caja {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .idiomas-columna {
-        width: 100%;
-    }
-
-    .educacion {
-        padding: 50px;
-    }
-
-    .educacion-caja {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .educacion-columna {
-        margin: 0 0 40px 0;
-    }
-
-    .contacto {
-        padding: 50px;
-    }
-
-    .contacto-caja div {
-        display: flex;
-        flex-flow: column;
-        text-align: center;
-    }
-}
-
-
-@media (max-width: 425px) {
-    .boton2 {
-        margin: 10px 0;
-        padding: 0;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    .navbar {
-        padding: 20px;
-    }
-
-    .header {
-        height: 40rem;
-        padding: 40px;
-        background-size: auto 40%;
-        background-position: center bottom;
-    }
-
-    .header-caja div {
-        display: flex;
-        flex-flow: column;
-        margin: 0 0 100px 0;
-    }
-
-    .experiencia {
-        padding: 40px;
-    }
-
-    .portfolio-caja {
-        grid-row-gap: 20px;
-    }
-
-    .portfolio-item1 {
-        background-size: auto 110%;
-        width: 13rem;
-        height: 7rem;
-    }
-
-    .portfolio-item2 {
-        background-size: auto 110%;
-        width: 13rem;
-        height: 7rem;
-    }
-
-    .portfolio-item3 {
-        background-size: auto 110%;
-        width: 13rem;
-        height: 7rem;
-    }
-
-    .portfolio-item4 {
-        background-size: auto 110%;
-        width: 13rem;
-        height: 7rem;
-    }
-
-    .porfolio-links {
-        width: 13rem;
-        height: 7rem;
-    }
-
-    .porfolio-links p {
-        font-size: 0.9em;
-    }
-
-    .habilidades {
-        padding: 40px;
-    }
-
-    .idiomas {
-        padding: 40px;
-    }
-
-    .educacion {
-        padding: 40px;
-    }
-
-    .contacto {
-        padding: 40px;
-    }
-
-    footer {
-        padding: 40px;
-    }
-}
-/* Fin ajustes mobile */
