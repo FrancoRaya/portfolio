@@ -30,21 +30,20 @@ a {
 
 .boton1 {
     background-color: #ff1d25;
-    border: 2px solid #ff1d25;
-    border-radius: 5px;
-    box-shadow: 0 0 30px #ff1d257e;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px #2c2c2c57;
     color: #fff;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 50px 10px;
-    padding: 10px 15px;
+    margin: 50px 0px;
+    padding: 13px 20px;
     transition-duration: 0.6s;
-    transform: scale(1.1,1.1);
     
     &:hover {
         box-shadow: none;
-        transform: scale(1,1);
+        background-color: #ff4a51;
     }
 
     & a {
@@ -90,8 +89,9 @@ a {
 
 /* Barra de navegación */
 .navbar {
-    background-color: #e0dbdb;
-    padding: 20px 120px;
+    background-color: #ebebe4;
+    border-bottom: 2px solid #332f2e;
+    padding: 15px 120px;
 }
 
 .navbar-menu {
@@ -115,7 +115,7 @@ a {
 /* Footer */
 footer {
     align-content: center;
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     display: flex;
     flex-flow: column;
     padding: 30px 150px;
@@ -132,12 +132,11 @@ footer {
 /* Header */
 .header {
     align-items: center;
-    background: url("/imagenes/portada.png") center no-repeat #e0dbdb;
+    background: url("/imagenes/portada.png") center no-repeat #ebebe4;
     display: flex;
-    height: 43rem;
+    height: 45rem;
     margin: 50px 0 0 0;
-    padding: 100px 150px;
-    position: relative;
+    padding: 100px 150px; 
 
     & h1 {
         font-size: 3em;
@@ -157,9 +156,15 @@ footer {
     text-align: center;
 
     & p {
-        padding: 0 100px;
+        padding: 0 50px;
         text-align: justify;
     }
+}
+
+.quiensoy-caja {
+    background-color: #ebebe4;
+    border-radius: 12px;
+    padding: 60px;
 }
 
 .quiensoy-redes {
@@ -170,7 +175,7 @@ footer {
 
 /* Experiencia */
 .experiencia {
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     padding: 100px 150px;
     text-align: center;
 }
@@ -201,7 +206,7 @@ footer {
     width: 28rem;
 
     &::before {
-        background: #e0dbdb;
+        background: #ebebe4;
         border: 2px solid #ff1d25;
         border-radius: 50px;
         content: "";
@@ -223,7 +228,7 @@ footer {
 
 /* Porfolio */
 .portfolio {
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     padding: 100px 150px;
     text-align: center;
 }
@@ -238,7 +243,7 @@ footer {
 
 .porfolio-links {
     background-color: rgba(255, 255, 255, 0.781);
-    border-radius: 15px;
+    border-radius: 8px;
     height: 15rem;
     opacity: 0;
     transition-duration: 1s;
@@ -260,8 +265,8 @@ footer {
 
 .portfolio-item1 {
     background: url('/imagenes/brainials-coder.jpg') center no-repeat;
-    border-radius: 15px;
-    box-shadow: 15px 15px 50px #332f2e5b;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px #1b1a1a79;
     display: flex;
     justify-content: left;
     justify-self: center;
@@ -272,8 +277,8 @@ footer {
 }
 
 .portfolio-item2 {
-    border-radius: 15px;
-    box-shadow: 15px 15px 50px #332f2e79;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px #1b1a1a79;
     background: url('/imagenes/brainials.jpg') center no-repeat;
     display: flex;
     justify-content: left;
@@ -286,8 +291,8 @@ footer {
 }
 
 .portfolio-item3 {
-    border-radius: 15px;
-    box-shadow: 15px 15px 50px #332f2e79;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px #1b1a1a79;
     background: url('/imagenes/brainials-youtube.jpg') center no-repeat;
     display: flex;
     justify-content: left;
@@ -299,8 +304,8 @@ footer {
 }
 
 .portfolio-item4 {
-    border-radius: 15px;
-    box-shadow: 15px 15px 50px #332f2e79;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px #1b1a1a79;
     background: url('/imagenes/synagro.jpg') center no-repeat;
     display: flex;
     justify-content: left;
@@ -333,12 +338,16 @@ footer {
     margin: 20px;
 
     & p {
-        font-size: 1.1em;
+        font-size: 1.3em;
+    }
+    & i {
+        font-size: 1.3em;
+        padding: 0 10px 0 0;
     }
 }
 
 .habilidades-barra {
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     border-radius: 5px;
 }
 
@@ -371,7 +380,7 @@ footer {
 }
 
 .idiomas-barra {
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     border-radius: 5px;
 }
 
@@ -430,12 +439,10 @@ footer {
 }
 
 .contacto-caja {
-    display: flex;
-    flex-flow: column;
-
+    flex-wrap: wrap;
     & div {
         display: flex;
-        text-align: left;
+        text-align: center;
     }
 }
 /* Fin contacto */
@@ -516,6 +523,7 @@ footer {
     }
 
     .contacto-caja {
+        flex-flow: column;
         & div {
             display: flex;
             flex-flow: column;
@@ -537,7 +545,7 @@ footer {
     }
 
     .quiensoy {
-        padding: 40px;
+        padding: 50px;
 
         & p {
             padding: 0;
@@ -685,7 +693,15 @@ footer {
             flex-flow: column;
             margin: 0 0 100px 0;
         }
-    } 
+    }
+
+    .quiensoy {
+        padding: 40px;
+    }
+
+    .quiensoy-caja {
+        padding: 30px;
+    }
 
     .experiencia {
         padding: 40px;

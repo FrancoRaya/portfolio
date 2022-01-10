@@ -110,7 +110,8 @@ footer div {
 
 /* Barra de navegación */
 .navbar {
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
+    opacity: 0;
     padding: 20px 120px;
 }
 
@@ -139,7 +140,7 @@ footer div {
     margin: 50px 0 0 0;
     padding: 100px 150px;
     height: 43rem;
-    background: url("/imagenes/portada.png") center no-repeat #e0dbdb;
+    background: url("/imagenes/portada.png") center no-repeat #ebebe4;
     align-items: center;
     position: relative;
 }
@@ -176,7 +177,7 @@ footer div {
 /* Experiencia */
 .experiencia {
     padding: 100px 150px;
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
     text-align: center;
 }
 
@@ -213,7 +214,7 @@ footer div {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #e0dbdb;
+    background: #ebebe4;
     border: 2px solid #ff1d25;
 }
 
@@ -229,7 +230,7 @@ footer div {
 .portfolio {
     padding: 100px 150px;
     text-align: center;
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
 }
 
 .portfolio-caja {
@@ -343,7 +344,7 @@ footer div {
 
 .habilidades-barra {
     border-radius: 5px;
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
 }
 
 .habilidades-barra__progreso {
@@ -376,7 +377,7 @@ footer div {
 
 .idiomas-barra {
     border-radius: 5px;
-    background-color: #e0dbdb;
+    background-color: #ebebe4;
 }
 
 .idiomas-barra__progreso {
@@ -443,6 +444,3 @@ footer div {
     text-align: left;
 }
 /* Fin contacto */
-
-
-
