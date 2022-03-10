@@ -43,7 +43,7 @@ a {
     
     &:hover {
         box-shadow: none;
-        background-color: #ff4a51;
+        background-color: #BD151A;
     }
 
     & a {
@@ -90,7 +90,9 @@ a {
 /* Barra de navegación */
 .navbar {
     background-color: #ebebe4;
-    border-bottom: 2px solid #332f2e;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #2c2c2c83;
+    margin: 20px 100px;
     padding: 15px 120px;
 }
 
@@ -135,7 +137,6 @@ footer {
     background: url("/imagenes/portada.png") center no-repeat #ebebe4;
     display: flex;
     height: 45rem;
-    margin: 50px 0 0 0;
     padding: 100px 150px; 
 
     & h1 {
@@ -480,6 +481,7 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
+        margin: 20px 50px;
         padding: 20px 80px;
     }
 
@@ -535,13 +537,14 @@ footer {
 
 @media (max-width: 575px) {
     .navbar {
+        margin: 20px;
         padding: 20px 50px;
     }
 
     .header {
         background-position: right bottom;
         background-size: auto 50%;
-        padding: 50px;
+        padding: 130px 50px 50px 50px;
     }
 
     .quiensoy {
@@ -684,7 +687,7 @@ footer {
         background-position: center bottom;
         background-size: auto 40%;
         height: 40rem;
-        padding: 40px;
+        padding: 150px 30px 30px 30px;
     }
 
     .header-caja {
