@@ -373,18 +373,20 @@ footer {
 @media (max-width: 1024px) {
   .portfolio-caja {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 40px; }
-  .portfolio-item1 {
-    grid-area: 1 / 1 / 3 / 3; }
-  .portfolio-item2 {
-    grid-area: 3 / 1 / 5 / 3; }
-  .portfolio-item3 {
-    grid-area: 5 / 1 / 7 / 3; }
+  .portfolio-item5 {
+    grid-area: 1 / 1 / 2 / 2; }
   .portfolio-item4 {
-    grid-area: 7 / 1 / 9 / 3; } }
+    grid-area: 2 / 1 / 3 / 2; }
+  .portfolio-item3 {
+    grid-area: 3 / 1 / 4 / 2; }
+  .portfolio-item2 {
+    grid-area: 4 / 1 / 5 / 2; }
+  .portfolio-item1 {
+    grid-area: 5 / 1 / 6 / 2; } }
 
 @media (max-width: 768px) {
   .navbar {
@@ -475,6 +477,10 @@ footer {
     background-size: auto 100%;
     width: 19rem;
     height: 12rem; }
+  .portfolio-item5 {
+    background-size: auto 100%;
+    width: 19rem;
+    height: 12rem; }
   .porfolio-links {
     height: 12rem;
     width: 19rem; }
@@ -540,6 +546,10 @@ footer {
     height: 7rem;
     width: 13rem; }
   .portfolio-item4 {
+    background-size: auto 110%;
+    height: 7rem;
+    width: 13rem; }
+  .portfolio-item5 {
     background-size: auto 110%;
     height: 7rem;
     width: 13rem; }
