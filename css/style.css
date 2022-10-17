@@ -50,9 +50,12 @@ a {
   letter-spacing: 1px;
   margin: 0 20px;
   padding: 15px 20px;
+  transition: 0.6s;
   width: fit-content; }
   .boton2:hover {
-    color: #F44945; }
+    color: #F44945;
+    transition: 0.6s;
+    border: 2px solid #1E2335; }
 
 .boton3 {
   border: none;
@@ -173,6 +176,7 @@ footer {
 
 .quiensoy-btn {
   display: flex;
+  justify-content: center;
   margin: 50px 0; }
 
 .quiensoy-redes {
@@ -317,6 +321,7 @@ footer {
 
 .portfolio-carrusel-contacto {
   display: flex;
+  justify-content: center;
   margin: 50px 0; }
 
 /* Fin porftolio */
