@@ -12,13 +12,16 @@
         <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 
         <!-- Css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" href="./css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Fin css -->
 
         <script src="https://kit.fontawesome.com/566b30e9bd.js" crossorigin="anonymous"></script>
@@ -27,48 +30,36 @@
     <body>
         <!-- Barra de navegación -->
         <header>
-            <nav class="navbar navbar-light fixed-top">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    
-                    <button class="navbar-toggler navbar-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="#inicio">
-                        <img src="./imagenes/Marca.png" alt="franco-raya-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="/imagenes/Marca-icon-wht-.png" alt="franco-raya-logo">
                     </a>
-                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="bi bi-list" style="color: #fff; font-size: 1.5em;"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#quiensoy">Quién Soy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencia-y-educacion">Experiencia y Educación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#habilidades">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
 
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header ps-5 pe-5">
-                            <img class="img-fluid" src="./imagenes/Marca.png" alt="franco-raya-logo">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Franco Raya</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="navbar-menu__links offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex"  href="#inicio">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#quiensoy">Quien Soy</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#experiencia">Mi Experiencia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#habilidades">Habilidades</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#educacion">Educación</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="menu-link d-flex" href="#contacto">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a class="boton1" href="#contacto">Contactarme</a>
                     </div>
                 </div>
             </nav>
@@ -78,7 +69,7 @@
 
         <!-- Header -->
         <section class="header">
-            <div class="header-caja">
+            <div class="header-box">
                 <h1 id="inicio">
                     Hey! Hola! Soy Fran
                 </h1>
@@ -88,17 +79,18 @@
                     <span class="typed-cursor" aria-hidden="true"></span>
                 </p>
 
-                <div>
-                    <button class="boton1">
-                        <a href="#contacto">Contactarme</a>
-                    </button>
-                    <button class="boton2"> 
-                        <a href="#quiensoy"> 
-                            Conoceme
-                            <i class="fas fa-chevron-right" style="color: #ff1d25;"></i>
-                        </a>
-                    </button>
+                <div class="header-box-btn">
+                    <a class="boton1" href="#contacto">
+                        Contactarme
+                    </a>
+                    <a class="boton2" href="#quiensoy"> 
+                        Conoceme
+                    </a>
                 </div>
+            </div>
+
+            <div class="header-img">
+                <img src="./imagenes/portada1.png" alt="franco foto">
             </div>
         </section>
         <!-- Fin header -->
@@ -106,302 +98,422 @@
 
         <!-- Quien soy -->
         <section class="quiensoy">
-            <div class="quiensoy-caja">
-                <h2 id="quiensoy">
+            <div class="seccion-titulo" id="quiensoy">
+                <div class="divisor"></div>
+                <span>
                     Quién Soy
-                </h2>
-    
-                <div class="divisor">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-    
-                <p>
-                    Creo que el <b>conocimiento</b>  es la herramienta más <b>poderosa</b> que tenemos para hacer de este mundo un lugar mejor, y creo aún más en lo que las personas somos capaces de hacer con ese <b>conocimiento</b>, si sabemos usarlo. Es por eso que he intentado cultivar mi <b>curiosidad</b> de muchas formas diferentes con el propósito de <b>ayudar a otros con mis aprendizajes</b>, porque el <i>conocimiento no sirve de nada si se puede compartir</i>.
-                </p>
-                <button class="boton1">
-                    <a href="https://drive.google.com/file/d/1e40QExbhjMKOBa9OT0Nf_TcD6mIhdFlS/view?usp=sharing" target="blank">
-                        Descargar mi cv
-                    </a>
-                </button>
-                <div>
-                    <a class="quiensoy-redes" href="https://github.com/FrancoRaya" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
-                    <a class="quiensoy-redes" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank"><i class="fab fa-linkedin-in" style="font-size: 2.5em;"></i></a>
-                    <a class="quiensoy-redes" href="https://twitter.com/FranRRaya" target="blank"><i class="fab fa-twitter" style="font-size: 2.5em;"></i></a>
-                </div>
+                </span>
+            </div>
+
+            <p>
+                Creo que el conocimiento  es la herramienta más poderosa que tenemos para hacer de este mundo un lugar mejor, y creo aún más en lo que las personas somos capaces de hacer con ese conocimiento, si sabemos usarlo. Es por eso que he intentado cultivar mi curiosidad de muchas formas diferentes con el propósito de ayudar a otros con mis aprendizajes, porque el <i>conocimiento no sirve de nada si se no puede compartir</i>.
+            </p>
+
+            <div class="quiensoy-btn">
+                <a class="boton1" href="https://drive.google.com/file/d/1e40QExbhjMKOBa9OT0Nf_TcD6mIhdFlS/view?usp=sharing" target="blank">
+                    Descargar mi cv
+                </a>
+            </div>
+
+
+            <div class="quiensoy-redes">
+                <a href="https://github.com/FrancoRaya" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
+                <a href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank"><i class="fab fa-linkedin-in" style="font-size: 2.5em;"></i></a>
             </div>
 
         </section>
         <!-- Fin quien soy -->
 
 
-        <!-- Experiencia -->
-        <section class="experiencia">
-            <h2 id="experiencia">
-                Mi Experiencia Laboral
-            </h2>
-
-            <div class="divisor">
-                <div></div>
-                <div></div>
-                <div></div>
+        <!-- Experiencia y educación-->
+        <section class="exp-edu">
+            <div class="seccion-titulo" id="experiencia-y-educacion">
+                <div class="divisor"></div>
+                <span>
+                    Experiencia y Educación
+                </span>
             </div>
 
-            <div class="mt-5">
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            Freelance
-                        </h3>
-                        <p>
+            <div class="exp-edu-box">
+                <div class="exp-edu-col">
+                    <div class="exp-edu-icon">
+                        <i class="bi bi-briefcase-fill" style="font-size: 3em; color: #F44945;"></i>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
                             Julio 2021 - Actual
                         </p>
-                    </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Clientes varios
+                        <h3 class="exp-edu-title">
+                            Desarrollador Web
                         </h3>
-                        <ul>
-                            <li>
-                                Desarrollador Web.
-                            </li>
-                            <li>
-                                Gestión de campañas de Google Ads.
-                            </li>
-                        </ul>
+                        <p class="exp-edu-company">
+                            Clientes varios
+                        </p>
+                        <p class="exp-edu-text">
+                            Como freelancer desarrollo diferentes proyectos web para diversos clientes con la intención de hacer que sus ideas se hagan realidad. Podés conocer más de estos proyectos abajo.
+                        </p>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Sep 2019 - Actual
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Creador de Contenidos
+                        </h3>
+                        <p class="exp-edu-company">
+                            Brainials
+                        </p>
+                        <p class="exp-edu-text">
+                            Creo y edito todo el contenido que se publica dentro de Brainials, esto incluye los diferentes posts en redes sociales y los videos en el canal de YouTube.
+                        </p>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Abril 2020 - Mayo 2021
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Analista de Marketing
+                        </h3>
+                        <p class="exp-edu-company">
+                            SYNAgro
+                        </p>
+                        <p class="exp-edu-text">
+                                Desarrollo de campañas en Google Ads.
+                                Diseño de estrategias SEO y diseño web.
+                                Elaboración de campañas de E-mail marketing.
+                        </p>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Sep 2017 - Oct 2018
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Analista de Marketing
+                        </h3>
+                        <p class="exp-edu-company">
+                            Metrocubico – E. Bercovich / El Sol 
+                        </p>
+                        <p class="exp-edu-text">
+                            Responsable de las estrategias de marketing digital (Redes sociales, e-mail, Google Ads y web).
+                            Desarrollo de spots publicitarios en radio y cine junto al equipo.
+                            Planeación junto al equipo en eventos con clientes.
+                        </p>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Mayo 2017 - Sep 2017
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Equipo de Marketing y Call Center
+                        </h3>
+                        <p class="exp-edu-company">
+                            Federación Económica de Tucumán
+                        </p>
+                        <p class="exp-edu-text">
+                            Gestión de cobranzas a clientes.
+                        </p>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Nov 2016 - Abril 2017
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Analista de Marketing
+                        </h3>
+                        <p class="exp-edu-company">
+                            Ministerio de Desarrollo Social
+                        </p>
+                        <p class="exp-edu-text">
+                            Asesoría y capacitación en estrategias de marketing para emprendedores, liderando un grupo de emprendedoras.
+                        </p>
                     </div>
                 </div>
 
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            Brainials
+                <div class="exp-edu-col">
+                    <div class="exp-edu-icon">
+                        <i class="bi bi-mortarboard-fill" style="font-size: 3em; color: #F44945;"></i>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Mayo 2022 - Julio 2022
+                        </p>
+                        <h3 class="exp-edu-title">
+                            JavaScript
                         </h3>
-                        <p>
-                            Sep 2019 - Actual
+                        <p class="exp-edu-company">
+                            CoderHouse
+                        </p>
+                        <p class="exp-edu-text">
+                            En este curso aprendí los principios fundamentales de JavaScript (controles de flujos, iteraciones, funciones, objetos, DOM, Arrays, etc.) para poder realizar diferentes aplicaciones web.
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn boton3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver certificado
+                            <i class="fas fa-chevron-right" style="color: #F44945;"></i>
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content exp-edu-cert">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="w-100" src="./imagenes/Certificado-javascript.png" alt="certificado programación web">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Septiembre 2021 - Noviembre 2021
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Programación Web
+                        </h3>
+                        <p class="exp-edu-company">
+                            CoderHouse
+                        </p>
+                        <p class="exp-edu-text">
+                            En este curso aprendí los principios fundamentales de HTML y CSS, pero al mismo tiempo aprendí a manejar diferentes frameworks y herramientas, tales como Bootstrap, GitHub o SCSS. 
+                        </p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn boton3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver certificado
+                            <i class="fas fa-chevron-right" style="color: #F44945;"></i>
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content exp-edu-cert">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="w-100" src="./imagenes/Certificado coder house - programación web.png" alt="certificado programación web">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Marzo 2021 - En pausa
+                        </p>
+                        <h3 class="exp-edu-title">
+                            Lic. en Psicología
+                        </h3>
+                        <p class="exp-edu-company">
+                            Universidad del Norte Santo Tomás de Aquino
+                        </p>
+                        <p class="exp-edu-text">
+                            Siempre traté de entender el comportamiento humano, es por eso que decidí comenzar la carrera de psicología en un intento de acercarme al conocimiento que me ayude a entender un poco más.
                         </p>
                     </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Creador de Contenidos
-                        </h3>
-                        <ul>
-                            <li>
-                                Redacción de artículos web y SEO.
-                            </li>
-                            <li>
-                                Producción y edición de contenido para redes sociales.
-                            </li>
-                            <li>
-                                Producción y edición de contenido audiovisual.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            SYNAgro
-                        </h3>
-                        <p>
-                            Abril 2020 - Mayo 2021
+
+                    <div class="exp-edu-item">
+                        <p class="exp-edu-timeline">
+                            Marzo 2012 - Julio 2017
                         </p>
-                    </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Analista de Marketing
+                        <h3 class="exp-edu-title">
+                            Lic. en Comercialización
                         </h3>
-                        <ul>
-                            <li>
-                                Desarrollo de campañas en Google Ads.
-                            </li>
-                            <li>
-                                Diseño de estrategias SEO y diseño web.
-                            </li>
-                            <li>
-                                Elaboración de campañas de E-mail marketing.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            Metrocubico – E. Bercovich / El Sol 
-                        </h3>
-                        <p>
-                            Sep 2017 - Oct 2018
+                        <p class="exp-edu-company">
+                            Universidad del Norte Santo Tomás de Aquino
                         </p>
-                    </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Analista de Marketing
-                        </h3>
-                        <ul>
-                            <li>
-                                Responsable de las estrategias de marketing digital (Redes sociales, e-mail, Google Ads y web).
-                            </li>
-                            <li>
-                                Desarrollo de spots publicitarios en radio y cine junto al equipo.
-                            </li>
-                            <li>
-                                Planeación junto al equipo en eventos con clientes.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            Federación Económica de Tucumán
-                        </h3>
-                        <p>
-                            Mayo 2017 - Sep 2017
+                        <p class="exp-edu-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde omnis vitae quaerat quibusdam eaque aut dolore maxime exercitationem pariatur adipisci a quas corrupti repellat architecto vel molestias est, alias dignissimos!
                         </p>
-                    </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Equipo de Marketing y Call Center
-                        </h3>
-                        <ul>
-                            <li>
-                                Gestión de cobranzas a clientes.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="experiencia-caja d-flex">
-                    <div class="experiencia-puesto">
-                        <h3>
-                            Ministerio de Desarrollo Social
-                        </h3>
-                        <p>
-                            Nov 2016 - Abril 2017
-                        </p>
-                    </div>
-    
-                    <div class="experiencia-descripcion">
-                        <h3>
-                            Analista de Marketing
-                        </h3>
-                        <ul>
-                            <li>
-                                Asesoría y capacitación en estrategias de marketing para emprendedores, liderando un grupo de emprendedoras.
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-
         </section>
-        <!-- Fin experiencia -->
+        <!-- Fin experiencia y educación -->
+
+        <!-- Idiomas -->
+        <section class="idiomas">
+            <div class="seccion-titulo" id="idiomas">
+                <div class="divisor"></div>
+                <span>
+                    Idiomas
+                </span>
+            </div>
+
+            <div class="idiomas-caja">
+                <div class="idiomas-columna">
+                    <div class="idiomas-item">
+                        <p>Inglés</p>
+                        <div class="progress idiomas-barra">
+                            <div class="progress-bar idiomas-barra__progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="idiomas-columna">
+                    <div class="idiomas-item">
+                        <p>Portugués</p>
+                        <div class="progress idiomas-barra">
+                            <div class="progress-bar idiomas-barra__progreso" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin idiomas -->
 
 
         <!-- Portfolio -->
         <section class="portfolio">
-            <h2 id="portfolio">
-                Mis Últimos Proyectos
-            </h2>
-
-            <div class="divisor">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="seccion-titulo" id="portfolio">
+                <div class="divisor"></div>
+                <span>
+                    Mis Últimos Proyectos
+                </span>
             </div>
 
-            <div class="portfolio-caja mt-5 mb-5">
-                <div class="portfolio-item5">
-                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
-                        <p>
-                            Maxtracker.com
-                        </p>
+            <div id="carouselExampleCaptions" class="carousel slide portfolio-carrusel" data-bs-ride="carousel">
+                <div class="carousel-indicators portfolio-carrusel-indicadores">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
 
-                        <div>
-                            <a href="https://maxtracker.com/" target="blank"><i class="fas fa-link" style="font-size: 2.5em;"></i></a>
+                <div class="carousel-inner portfolio-carrusel-box">
+                    <div class="carousel-item active portfolio-carrusel-item">
+                        <a href="#" target="blank">
+                            <img src="./imagenes/mp-y-asoc.jpg" class="w-100 portfolio-carrusel-img" alt="mp y asociados" >
+                        </a>
+
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">MP y Asociados</h5>
+                            <a href="#" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
 
-                <div class="portfolio-item4">
-                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
-                        <p>
-                            Proyecto Coder - Brainials
-                        </p>
-
-                        <div>
-                            <a href="https://github.com/FrancoRaya/brainials/tree/master" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
-                            <a href="https://francoraya.github.io/brainials/" target="blank"><i class="fas fa-link" style="font-size: 2.5em;"></i></a>
+                    <div class="carousel-item portfolio-carrusel-item">
+                        <a href="https://francoraya.github.io/taskmaster/" target="blank">
+                            <img src="./imagenes/taskmaster.jpg" class="w-100 portfolio-carrusel-img" alt="taskmaster">
+                        </a>
+                        
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">TaskMaster</h5>
+                            <a href="https://francoraya.github.io/taskmaster/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
 
-                <div class="portfolio-item3">
-                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
-                        <p>
-                            Brianials.info
-                        </p>
-    
-                        <a href="https://brainials.info/" target="blank">
-                            <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                    <div class="carousel-item portfolio-carrusel-item">
+                        <a href="https://csta.com.ar/" target="blank" >
+                            <img src="./imagenes/csta.jpg" class="w-100 portfolio-carrusel-img" alt="colegio santo tomás de aquino">
                         </a>
+
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">CSTA</h5>
+                            <a href="https://csta.com.ar/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="portfolio-item2">
-                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
-                        <p>
-                            Brainials - YouTube
-                        </p>
-
-                        <a href="https://www.youtube.com/c/Brainials/videos" target="blank">
-                            <i class="fab fa-youtube" style="font-size: 2.5em;"></i>
+                    <div class="carousel-item portfolio-carrusel-item">
+                        <a href="https://maxtracker.com/" target="blank">
+                            <img src="./imagenes/maxtracker.jpg" class="w-100 portfolio-carrusel-img" alt="maxtracker">
                         </a>
+
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">Maxtracker</h5>
+                            <a href="https://maxtracker.com/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="portfolio-item1">
-                    <div class="porfolio-links d-flex flex-column justify-content-center align-items-center">
-                        <p>
-                            Synagroweb.com
-                        </p>
+                    <div class="carousel-item portfolio-carrusel-item">
+                        <a href="https://francoraya.github.io/brainials/" target="blank">
+                            <img src="./imagenes/brainials.jpg" class="w-100 portfolio-carrusel-img" alt="branials coderhouse">
+                        </a>
 
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">Brainials (CoderHouse)</h5>
+                            <a href="https://francoraya.github.io/brainials/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item portfolio-carrusel-item">
                         <a href="https://synagroweb.com/" target="blank">
-                            <i class="fas fa-link" style="font-size: 2.5em;"></i>
+                            <img src="./imagenes/synagro.jpg" class="w-100 portfolio-carrusel-img" alt="synagro">
                         </a>
+
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">SYNAgro</h5>
+                            <a href="https://synagroweb.com/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item portfolio-carrusel-item">
+                        <a href="https://brainials.info/" target="blank">
+                            <img src="./imagenes/brainials.jpg" class="w-100 portfolio-carrusel-img" alt="brainials">
+                        </a>
+
+                        <div class="d-none d-md-block portfolio-carrusel-caption">
+                            <h5 class="portfolio-carrusel-tit">Brainials</h5>
+                            <a href="https://brainials.info/" class="portfolio-carrusel-link" target="blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <button class="carousel-control-prev portfolio-carrusel-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next portfolio-carrusel-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <button class="boton1">
-                <a href="#contact">
+            <div class="portfolio-carrusel-contacto">
+                <a class="boton1" href="#contact">
                     Contactarme
                 </a>
-                
-            </button>
+            </div>
         </section>
         <!-- Fin portfolio -->
 
 
         <!-- Habilidades -->
         <section class="habilidades">
-            <h2 id="habilidades">
-                Mis Habilidades
-            </h2>
-            
-            <div class="divisor">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="seccion-titulo" id="habilidades">
+                <div class="divisor"></div>
+                <span>
+                    Mis Habilidades
+                </span>
             </div>
             
             <div class="habilidades-caja">
@@ -410,6 +522,13 @@
                         <p> <i class="fab fa-html5"></i> HTML </i></p>
                         <div class="progress habilidades-barra">
                             <div class="progress-bar habilidades-barra__progreso" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidades-item">
+                        <p> <i class="fab fa-js"></i> JavaScript </i></p>
+                        <div class="progress habilidades-barra">
+                            <div class="progress-bar habilidades-barra__progreso" role="progressbar" style="width: 30%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
         
@@ -447,13 +566,6 @@
                             <div class="progress-bar habilidades-barra__progreso" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-
-                    <div class="habilidades-item">
-                        <p> <i class="fab fa-google"></i> Google Analítics</p>
-                        <div class="progress habilidades-barra">
-                            <div class="progress-bar habilidades-barra__progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
                 </div>
         
 
@@ -473,7 +585,7 @@
                     </div>
 
                     <div class="habilidades-item">
-                        <p>SEO</p>
+                        <p><i class="bi bi-browser-chrome"></i>SEO</p>
                         <div class="progress habilidades-barra">
                             <div class="progress-bar habilidades-barra__progreso" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -512,146 +624,41 @@
         <!-- Fin habilidades -->
 
 
-        <!-- Idiomas -->
-        <section class="idiomas">
-            <h3>
-                Idiomas
-            </h3>
-
-            <div class="idiomas-caja">
-                <div class="idiomas-columna">
-                    <div class="idiomas-item">
-                        <p>Inglés</p>
-                        <div class="progress idiomas-barra">
-                            <div class="progress-bar idiomas-barra__progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="idiomas-columna">
-                    <div class="idiomas-item">
-                        <p>Portugués</p>
-                        <div class="progress idiomas-barra">
-                            <div class="progress-bar idiomas-barra__progreso" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fin idiomas -->
-
-        
-        <!-- Educación -->
-        <section class="educacion">
-            <h2 id="educacion">
-                Mi Educación
-            </h2>
-
-            <div class="divisor">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div class="educacion-caja mt-5">
-                <div class="educacion-columna">
-                    <h3>
-                        Carreras
-                    </h3>
-
-                    <div class="educacion-item">
-                        <h4>
-                            Lic. en Comercialización
-                        </h4>
-                        <p>
-                            Universidad del Norte Santo Tomás de Aquino | Egresado
-                        </p>
-                    </div>
-        
-                    <div class="educacion-item">
-                        <h4>
-                            Lic. en Psicología
-                        </h4>
-                        <p>
-                            Universidad del Norte Santo Tomás de Aquino | En pausa
-                        </p>
-                    </div>
-                </div>
-        
-                <div class="educacion-columna">
-                    <h3>
-                        Cursos
-                    </h3>
-
-                    <div class="educacion-item">
-                        <h4>
-                            Programación Web
-                        </h4>
-                        <p>
-                            CoderHouse
-                        </p>
-                        <button class="boton3">
-                            <a href="https://drive.google.com/file/d/1MFIomO5ZhbRRVz6Ul8j9uBgN6j_TK7_8/view?usp=sharing" target="blank">
-                                Ver certificado
-                                <i class="fas fa-chevron-right" style="color: #ff1d25;"></i>
-                            </a>
-                        </button>
-                    </div>
-
-                    <div class="educacion-item">
-                        <h4>
-                            Introducción al UX Design
-                        </h4>
-                        <p>
-                            Google
-                        </p>
-                    </div>
-
-                    <div class="educacion-item">
-                        <h4>
-                            Introducción a la Psicología
-                        </h4>
-                        <p>
-                            Yale | Coursera
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fin educación -->
-
         <!-- Contacto -->
-        <section id="contact" class="contacto">
-                <h2 id="contacto">
+        <section class="contacto">
+            <div class="seccion-titulo" id="contacto">
+                <div class="divisor"></div>
+                <span>
                     Contacto
-                </h2>
+                </span>
+            </div>
 
-                <div class="divisor">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="contacto-col">
+                <div class="contacto-box">
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt" style="font-size: 2em;"></i>
+                        <p class= p-0">Tucumán - Argentina</p>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="far fa-envelope" style="font-size: 2em;"></i>
+                        <a class= p-0" href="mailto:francorobertoraya@gmail.com" >francorobertoraya@gmail.com</a>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="fab fa-linkedin-in" style="font-size: 2em;"></i>
+                        <a class= p-0" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank">/franco-raya</a>
+                    </div>
                 </div>
 
-                <div class="contacto-caja d-flex justify-content-evenly">
-                    <div >
-                        <i class="fas fa-map-marker-alt m-3" style="font-size: 2em;"></i>
-                        <p class="m-3 p-0">Tucumán - Argentina</p>
-                    </div>
-
-                    <div >
-                        <i class="far fa-envelope m-3" style="font-size: 2em;"></i>
-                        <a class="m-3 p-0" href="mailto:francoraya14@gmail.com" >francoraya14@gmail.com</a>
-                    </div>
-
-                    <div >
-                        <i class="fas fa-mobile-alt m-3" style="font-size: 2em;"></i>
-                        <p class="m-3 p-0">+54 381 356 2863</p>
-                    </div>
-
-                    <div >
-                        <i class="fab fa-linkedin-in m-3" style="font-size: 2em;"></i>
-                        <a class="m-3 p-0" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank">/franco-raya</a>
-                    </div>
+                <div class="contacto-form">
+                    <form id="form">
+                        <input class="contacto-form-input w-100" type="text" name="userName" id="userName" placeholder="Nombre" required>
+                        <input class="contacto-form-input w-100" type="text" name="userEmail" id="userEmail" placeholder="Email" required>
+                        <textarea class="contacto-form-input w-100" type="text" name="userMessage" id="userMessage" placeholder="Mensaje" rows="6" required></textarea>
+                    
+                        <input class="boton1" type="submit" id="button" value="Enviar">
+                    </form>
                 </div>
             </div>
         </section>
@@ -659,13 +666,36 @@
 
 
         <!-- Js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script src="js/typed.js/typed.min.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript"> emailjs.init('user_8TqOqNni0TtnCMnxmWxQV') </script>
+
+        <script>
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+            .addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Enviando...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_wmslu3s';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                btn.value = 'Enviar';
+                alert('Enviado!');
+                }, (err) => {
+                btn.value = 'Enviar';
+                alert(JSON.stringify(err));
+                });
+            });
+        </script>
 
         <script src="./js/main.js"></script>
         <!-- Fin js -->
@@ -673,15 +703,14 @@
 
     <footer>
         <div>
-            <img src="./imagenes/Marca.png" alt="franco-raya">
+            <img src="./imagenes/Marca-icon-wht-.png" alt="franco-raya">
             <h4>
                 Franco Raya
             </h4>
         </div>
         <div>
-            <a class="quiensoy-redes" href="https://github.com/FrancoRaya" target="blank"><i class="fab fa-github" style="font-size: 2.5em;"></i></a>
-            <a class="quiensoy-redes" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank"><i class="fab fa-linkedin-in" style="font-size: 2.5em;"></i></a>
-            <a class="quiensoy-redes" href="https://twitter.com/FranRRaya" target="blank"><i class="fab fa-twitter" style="font-size: 2.5em;"></i></a>
+            <a class="quiensoy-redes" href="https://github.com/FrancoRaya" target="blank"><i class="fab fa-github" style="font-size: 1.5em; color: #fff;"></i></a>
+            <a class="quiensoy-redes" href="https://www.linkedin.com/in/franco-r-raya-b35240109/" target="blank"><i class="fab fa-linkedin-in" style="font-size: 1.5em; color: #fff;"></i></a>
         </div>
     </footer>
 </html>
