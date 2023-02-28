@@ -29,3 +29,19 @@
     });
   }
 })()
+
+/* Switch idiomas  */
+let switchIdioma = document.querySelector (".navbar-idioma-switch");
+
+switchIdioma.addEventListener ('click', idioma)
+
+function idioma() {
+  console.log=(switchIdioma.checked);
+/*   let id = switchIdioma.checked;
+
+  if (id===true) {
+    location.href="en/index.html";
+  } else {
+    location.href="../index.html";
+  } */
+}

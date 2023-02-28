@@ -121,6 +121,56 @@ a {
         color: #F44945;
     }
 }
+
+.navbar-idioma {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-idioma-es {
+    color: #F44945;
+    margin: 0 10px;
+}
+
+.navbar-idioma-switch {
+    position: relative;
+    width: 50px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        background-color: #1E2335;
+        border-radius: 25px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        border-radius: 25px;
+        transition: 0.25s;
+        border: 2px solid #1E2335;
+        box-sizing: border-box;
+    }
+
+    &:checked::after {
+        left: 25px;
+        border: 2px solid #F44945;
+    }
+
+    &:checked::before {
+        background-color: #F44945;
+    }
+}
+
+.navbar-idioma-en {
+    color: #332f2e;
+    margin: 0 10px;
+}
 /* Fin barra de navegación */
 
 
