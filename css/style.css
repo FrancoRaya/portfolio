@@ -58,13 +58,16 @@ a {
     border: 2px solid #1E2335; }
 
 .boton3 {
+  font-family: 'Roboto', sans-serif;
   border: none;
   color: #F44945;
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 5px 0;
-  padding: 0; }
+  margin: 10px 0;
+  padding: 0;}
+  .boton3:hover {
+    color: #F44945; }
 
 .divisor {
   background-color: #F44945;
@@ -82,6 +85,10 @@ a {
   .navbar .container-fluid {
     padding: 0; }
 
+.navbar-nav {
+  align-items: center;
+}
+
 .navbar-collapse {
   justify-content: space-between !important; }
 
@@ -98,43 +105,18 @@ a {
   .nav-link:hover {
     color: #F44945; }
 
-.navbar-idioma {
+.navbar-contacto {
   display: flex;
   justify-content: center; }
 
-.navbar-idioma-es {
-  color: #F44945;
-  margin: 0 10px; }
+.idioma {
+  padding: 0 0.5rem 0 0.5rem;
+}
 
-.navbar-idioma-switch {
-  position: relative;
-  width: 50px; }
-  .navbar-idioma-switch::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    background-color: #1E2335;
-    border-radius: 25px; }
-  .navbar-idioma-switch::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: #fff;
-    border-radius: 25px;
-    transition: 0.25s;
-    border: 2px solid #1E2335;
-    box-sizing: border-box; }
-  .navbar-idioma-switch:checked::after {
-    left: 25px;
-    border: 2px solid #F44945; }
-  .navbar-idioma-switch:checked::before {
-    background-color: #F44945; }
-
-.navbar-idioma-en {
-  color: #332f2e;
-  margin: 0 10px; }
+.bajada {
+  color: #F0ECDC;
+  font-style: italic;
+}
 
 /* Fin barra de navegación */
 /* Footer */
@@ -159,7 +141,7 @@ footer {
   align-items: center;
   background-color: #1E2335;
   display: flex;
-  height: 40rem;
+  height: flex;
   padding: 100px 150px 0 150px; }
   .header h1 {
     font-size: 3em; }
@@ -235,6 +217,7 @@ footer {
 .exp-edu-col {
   display: flex;
   flex-flow: column;
+  width: fit-content;
   margin: 40px 40px 40px 0; }
 
 .exp-edu-icon {
@@ -290,6 +273,77 @@ footer {
   background-color: #F0ECDC; }
 
 /* Fin experiencia y educación*/
+
+/* Mis servicios */
+.mis-servicios {
+  padding: 100px 150px;
+  text-align: center;
+  background-color: #1E2335;
+}
+
+.mis-servicios .seccion-titulo span {
+  color: #F0ECDC;
+}
+
+.mis-servicios-plan {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plan-1, .plan-2 {
+  padding: 40px;
+  margin: 20px;
+  text-align: left;
+  width: -webkit-fill-available;
+  color: #F0ECDC;
+}
+
+.plan-1 {
+  border: 4px solid #F44945;
+}
+
+.plan-2 {
+  background-color: #F44945;
+}
+
+.plan-1 h3, .plan-2 h3 {
+  color: #F0ECDC;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mis-servicios-txt {
+  color: #F0ECDC;
+}
+
+/*  {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #F0ECDC;
+} */
+
+.plan-1 li, .plan-2 li {
+  color: #F0ECDC;
+}
+
+.plan-1 a, .plan-2 a {
+  text-align: center;
+}
+/* Fin Mis servicios */
+
+
+/* Mis proyectos de análisis de datos */
+.porfolio-casos {
+  display: flex;
+  align-content: center;
+}
+/* Fin Mis proyectos de análisis de datos */
+
+
 /* Idiomas */
 .idiomas {
   padding: 100px 150px;
@@ -325,11 +379,6 @@ footer {
 
 .portfolio-carrusel-item {
   padding: 50px 100px; }
-
-.portfolio-carrusel-img {
-  border-radius: 15px;
-  background: #1E2335;
-  box-shadow: 15px 15px 40px #9f9f9f, -15px -15px 40px #ffffff; }
 
 .portfolio-carrusel-caption {
   margin: 50px 0; }
@@ -446,7 +495,9 @@ footer {
   .header {
     padding: 100px 50px 0 50px; }
   .quiensoy, .exp-edu, .idiomas, .portfolio, .habilidades, .contacto {
-    padding: 100px 50px; } }
+    padding: 100px 50px; } 
+    .mis-servicios-plan {
+      display: block;}}
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -489,7 +540,10 @@ footer {
     flex-flow: column; }
   .contacto-box, .contacto-form {
     width: 100%;
-    margin: 15px 0; } }
+    margin: 15px 0; } 
+    .mis-servicios {
+      padding: 30px;
+    }}
 
 @media (max-width: 575px) {
   .boton1, .boton2 {
@@ -576,6 +630,8 @@ footer {
 
 @media (max-width: 375px) {
   .header-img img {
-    width: 90%; } }
+    width: 90%; } 
+  .mis-servicios {
+    padding: 10px;}}
 
 /* Fin ajustes mobile */
