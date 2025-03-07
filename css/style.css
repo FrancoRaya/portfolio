@@ -295,7 +295,6 @@ footer {
   margin: 20px;
   text-align: left;
   width: -webkit-fill-available;
-  color: #F0ECDC;
 }
 
 .plan-1 {
@@ -312,6 +311,7 @@ footer {
   font-style: italic;
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 2em;
 }
 
 .mis-servicios-txt {
@@ -326,12 +326,51 @@ footer {
   color: #F0ECDC;
 } */
 
-.plan-1 li, .plan-2 li {
+.plan-1 li, .plan-2 li, .plan-1 p, .plan-2 p {
   color: #F0ECDC;
+  line-height: 2em;
 }
 
 .plan-1 a, .plan-2 a {
   text-align: center;
+}
+
+.mis-servicios-item {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.mis-servicios-opc-title {
+  color: #F0ECDC;
+  margin: 50px 0;
+}
+
+.mis-servicios-opc {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.opc-1 {
+  border: 4px dotted #F44945;
+  padding: 40px;
+  margin: 20px;
+  text-align: left;
+  width: -webkit-fill-available;
+}
+
+.opc-1 p, .opc-1 h3 {
+  color: #F0ECDC;
+}
+
+.opc-1 h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.mis-servicios-nota p {
+  color: #F0ECDC;
+  font-style: italic;
+  font-size: small;
 }
 /* Fin Mis servicios */
 
@@ -496,7 +535,7 @@ footer {
     padding: 100px 50px 0 50px; }
   .quiensoy, .exp-edu, .idiomas, .portfolio, .habilidades, .contacto {
     padding: 100px 50px; } 
-    .mis-servicios-plan {
+    .mis-servicios-plan, .mis-servicios-opc {
       display: block;}}
 
 @media (min-width: 992px) {
